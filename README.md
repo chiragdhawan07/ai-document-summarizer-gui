@@ -83,12 +83,17 @@ cd ai-document-summarizer-gui
 pip install openai PyPDF2 python-docx python-dotenv
 ```
 
-4. Add Your OpenAI API Key
-- Open the pre-created `.env` file and paste your OpenAI API key like this:
+4. Paste Your OpenAI API Key
+- The `.env` file is already created for you. Just open and edit it:
+```bash
+notepad .env
+```
+- Now paste your API key like this:
 ```bash
 OPENAI_API_KEY="your-api-key-here"
 ```
 > 💡 You can get your API key from: https://platform.openai.com/account/api-keys
+- ✅ Save and close the file.
 
 5.  Run the Application
 ```bash
