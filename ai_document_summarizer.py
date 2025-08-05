@@ -1,13 +1,14 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
+from dotenv import load_dotenv
 from docx import Document
 from openai import OpenAI
 from PyPDF2 import PdfReader
 import textwrap
 
-# ✅ Set your OpenAI API key correctly
-client = OpenAI(api_key="openai.api_key")  # Replace with your actual API key
+load_dotenv()  # Load variables from .env
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def load_text_file():
     file_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
@@ -127,3 +128,4 @@ tk.Button(button_frame, text="🧹 Clear", command=clear_text).grid(row=0, colum
 tk.Button(button_frame, text="💾 Save Summary", command=save_summary).grid(row=0, column=5, padx=5)
 
 root.mainloop()
+
