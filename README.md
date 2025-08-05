@@ -80,10 +80,15 @@ cd ai-document-summarizer-gui
 
 3. Install required libraries
 ```bash
-pip install openai tkinter PyPDF2 python-docx python-dotenv
+pip install openai PyPDF2 python-docx python-dotenv
 ```
 
 4. Add Your OpenAI API Key
+Open the pre-created `.env` file and paste your OpenAI API key like this:
+```bash
+OPENAI_API_KEY="your-api-key-here"
+```
+> 💡 You can get your API key from: https://platform.openai.com/account/api-keys
 
 5.  Run the Application
 ```bash
@@ -112,9 +117,9 @@ brew install python-tk
 
 ## 🛠️ Notes
 
-- You must set your **OpenAI API key** inside the script (in `openai.api_key`).
-- Internet connection is required to generate summaries.
-- This project avoids chunking messages into “Chunk 1”, “Chunk 2”, etc. — summary output is clean and direct.
+- ✅ You only need to paste your OpenAI API key into the pre-created `.env` file — no need to modify the script.
+- 🌐 An active internet connection is required for the app to communicate with OpenAI's servers and generate summaries.
+- 🧠 The summarizer is designed to produce clean, continuous summaries — no messy “Chunk 1”, “Chunk 2” outputs.
 
 ---
 
