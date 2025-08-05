@@ -84,7 +84,7 @@ pip install openai PyPDF2 python-docx python-dotenv
 ```
 
 4. Add Your OpenAI API Key
-Open the pre-created `.env` file and paste your OpenAI API key like this:
+- Open the pre-created `.env` file and paste your OpenAI API key like this:
 ```bash
 OPENAI_API_KEY="your-api-key-here"
 ```
